@@ -85,7 +85,7 @@ const Translate = () => {
         {download && (
           <>
             <button>
-              <a id="downloadAnchorElem" onClick={downloadTxtFile}>
+              <a href ="google" id="downloadAnchorElem" onClick={downloadTxtFile}>
                 Download
               </a>
             </button>
