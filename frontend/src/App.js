@@ -1,9 +1,12 @@
-import './App.css';
-
+import Header from './components/Header';
+import Translate from './components/Translate';
+import RecentTrans from './components/recentTranslation';
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Header />
+      <Translate />
+      <RecentTrans />
     </div>
   );
 }
