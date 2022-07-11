@@ -46,4 +46,6 @@ input[type='file'] {
   outline: 0;
 }
 
-
+.show-text {
+    text-align: center;
+}
