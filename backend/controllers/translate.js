@@ -13,7 +13,7 @@ const getRecentTranslations = async (req, res) => {
 };
 
 const textTranslation = async (req, res) => {
-  const textToTranslate = req.body;
+  const textToTranslate = req.body.textTranslation;
   let translatedText = {};
   try {
     for(let key in textToTranslate) {
