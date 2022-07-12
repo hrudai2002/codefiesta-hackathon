@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 const translateSchema = new mongoose.Schema({
      textTranslation: {
         type: Object
+     },
+     date: {
+      type: Date,
+      default: new Date()
      }
 })
 
