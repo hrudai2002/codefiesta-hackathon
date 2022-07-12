@@ -3,12 +3,10 @@ import greenDiamond from './styles/images/decorative-green-diamond.svg'
 import blueCircle from './styles/images/decorative-blue-circle.svg'
 import whiteCircle from './styles/images/decorative-white-circle.svg'
 import yellowCircle from './styles/images/decorative-yellow-circle.svg'
-import phone from './styles/images/phone.png'
+import Translate from './Translate'
 import './styles/bootstrap.css'
-import './styles/fontawesome-all.css'
-import './styles/swiper.css'
-import './styles/magnific-popup.css'
 import './styles/styles.css'
+import './styles/translate.css'
 const Header = () => {
     const [loading, setLoading] = useState(true);
     useEffect(()=> {
@@ -53,13 +51,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="image-container">
-                <img class="img-fluid" src={phone} alt="alternative" />
-              </div>
-            </div>
-          </div>
+          <Translate />
         </div>
         <div class="deco-white-circle-1">
           <img src={whiteCircle} alt="alternative" />

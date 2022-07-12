@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import translateLoader from "./styles/images/translate.gif";
 import axios from "axios";
 import "./styles/translate.css";
 
 const Translate = () => {
   const [text, setText] = useState();
+  const [alert, setAlert] = useState(false);
   const [loader, setLoader] = useState(false);
   const [translate, setTranslate] = useState(false);
   const [download, setDownload] = useState(false);
@@ -25,8 +27,7 @@ const Translate = () => {
   };
 
   const uploadFile = () => {
-    let preview = document.getElementById("show-text");
-
+    let inputFile = document.getElementById("inputFile");
     let file = document.querySelector("input[type=file]").files[0];
     let reader = new FileReader();
 
@@ -38,8 +39,11 @@ const Translate = () => {
         setTranslate(true);
       };
     } else {
-      preview.innerHTML =
-        "<span class='error'>It doesn't seem to be a json file!</span>";
+      inputFile.value = "";
+      setAlert(true);
+      setTimeout(() => {
+        setAlert(false);
+      }, 2000);
     }
     reader.readAsText(file);
   };
@@ -65,7 +69,14 @@ const Translate = () => {
   return (
     <div className="parent-upload-wrapper">
       <div className="upload-wrapper">
-        <h1>Upload your json file here !!!</h1>
+        {alert && (
+          <div>
+            <h4 className="alert alert-danger">
+              It doesn't seem to be a json file!
+            </h4>
+          </div>
+        )}
+
         <header>
           <div className="icon">
             <svg
@@ -87,7 +98,7 @@ const Translate = () => {
 
           {translate && (
             <button className="bttn" onClick={translateFile}>
-              Convert{" "}
+              Translate{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -106,25 +117,16 @@ const Translate = () => {
         <div id="show-text">
           {loader && (
             <>
-              <div className="loader">
-                <div className="loadingio-spinner-dual-ring-leywlhlen9h">
-                  <div className="ldio-w9i9s4valt"></div>
-                </div>{" "}
-              </div>
-              <div
-                class="alert alert-warning"
-                role="alert"
-                style={{
-                  backgroundColor: "",
-                  color: "black",
-                  fontWeight: "bold",
-                  marginLeft: "33vh",
-                  padding: "12px 20px 1px 20px",
-                  width: "30%",
-                  height: "30%",
-                }}
-              >
-                <p>Please Wait !</p>
+              <div>
+                <h6 className="alert alert-success">
+                  Please be patient for a while 😌{" "}
+                </h6>
+                <img
+                  src={translateLoader}
+                  width="300px"
+                  height="300px"
+                  alt=""
+                />
               </div>
             </>
           )}
@@ -132,22 +134,8 @@ const Translate = () => {
 
         {download && (
           <>
-            <div
-              class="alert alert-success"
-              role="alert"
-              style={{
-                backgroundColor: "rgb(32, 255, 151)",
-                borderColor: "rgb(32, 255, 151)",
-                color: "black",
-                marginTop: "20px",
-                fontWeight: "bold",
-                marginLeft: "33vh",
-                padding: "10px 20px 0px 20px",
-                width: "30%",
-                height: "30%",
-              }}
-            >
-              <p>Here is your file! </p>
+            <div>
+              <h6 className="alert alert-success">Here is your File 😀 </h6>
             </div>
             <button className="download">
               <a

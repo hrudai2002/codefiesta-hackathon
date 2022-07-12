@@ -5,15 +5,14 @@
   padding: 20px 0;
   text-align: center;
   font-family: 'Open Sans';
-  background: #e8eff6;
+  background: #f7fafd;
 }
 .upload-wrapper {
   background: #343a40;
   margin: 30px auto;
   max-width: 650px;
   padding: 20px;
-  border-radius: 20px;
-  
+  border-radius: 5px;
 }
 
 hr {
@@ -32,24 +31,23 @@ header {
   padding: 11px 30px 10px 30px;
   border: 2px solid #ff3333;
   border-radius: 10px;
-  width: 50% ;
+  width: 50%;
   display: block;
   color: #ffff;
   background-color: #ff3333;
   font-weight: bold;
   margin-left: 23vh;
- 
 }
-h1 {
+.upload-wrapper h1 {
   font-size: 22px;
+  color: #fff;
 }
 a {
   color: blue;
   font-size: 13px;
   text-decoration: none;
 }
-input[type='file']::file-selector-button
-{
+input[type='file']::file-selector-button {
   margin-top: 20px;
   padding: 11px 30px 10px 30px;
   background-color: #ffff;
@@ -60,15 +58,15 @@ input[type='file']::file-selector-button
   margin-left: 50px;
 }
 
-input[type='file']{
-  color: #ffff; 
+input[type='file'] {
+  color: #ffff;
 }
 
-.bttn{
+.bttn {
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
-  border-radius:5px;
+  border-radius: 5px;
   padding: 5px 10px 5px 10px;
   border: 2px solid #ffff;
   background-color: #fff;
@@ -76,15 +74,14 @@ input[type='file']{
   font-weight: bold;
   width: 60%;
 }
-.bttn:hover{
+.bttn:hover {
   background-color: #fdad0f;
   border-color: #ffbb33;
   color: #ffff;
 }
 
-
 .show-text {
-    text-align: center;
+  text-align: center;
 }
 
 .icon {
@@ -92,80 +89,18 @@ input[type='file']{
   color: #ffff;
 }
 
-.loader{
- margin-right: 30px ;
-
- 
-}
-
-
-@keyframes ldio-w9i9s4valt {
-  0% { transform: rotate(0) }
-  100% { transform: rotate(360deg) }
-}
-.ldio-w9i9s4valt div { box-sizing: border-box!important }
-.ldio-w9i9s4valt > div {
-  position: absolute;
-  width: 144px;
-  height: 144px;
-  top: 28px;
-  left: 28px;
-  border-radius: 50%;
-  border: 16px solid #000;
-  border-color: #ffff transparent #ffff transparent;
-  animation: ldio-w9i9s4valt 1s linear infinite;
-}
-.ldio-w9i9s4valt > div:nth-child(2) { border-color: transparent }
-.ldio-w9i9s4valt > div:nth-child(2) div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform: rotate(45deg);
-}
-.ldio-w9i9s4valt > div:nth-child(2) div:before, .ldio-w9i9s4valt > div:nth-child(2) div:after { 
-  content: "";
-  display: block;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: -16px;
-  left: 48px;
-  background: #ffff;
-  border-radius: 50%;
-  box-shadow: 0 128px 0 0 #ffff;
-}
-.ldio-w9i9s4valt > div:nth-child(2) div:after { 
-  left: -16px;
-  top: 48px;
-  box-shadow: 128px 0 0 0 #ffff;
-}
-.loadingio-spinner-dual-ring-leywlhlen9h {
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-  overflow: hidden;
-  background: #008ae6;
-}
-.ldio-w9i9s4valt {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform: translateZ(0) scale(1);
-  backface-visibility: hidden;
-  transform-origin: 0 0; 
-}
-.ldio-w9i9s4valt div { box-sizing: content-box; }
-
-
 .download {
   color: #000;
-  border-radius:5px;
-  margin-right: 55px;
+  border-radius: 5px;
+  margin-right: auto;
+  margin-left: auto;
   border: 2px solid #ffff;
   background-color: #ffff;
+  width: 60%;
+  height: 40px;
 }
 
-#downloadAnchorElem{
+#downloadAnchorElem {
   margin: 10px 10px 10px 10px;
   color: #000;
   text-decoration: none;
@@ -193,24 +128,17 @@ input[type='file']{
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-@-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;} 
-  to {bottom: 30px; opacity: 1;}
+
+
+
+@media screen and (max-width: 686px) {
+  .upload-wrapper {
+    max-width: 500px;
+  }
 }
 
-@keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+@media screen and (max-width: 528px) {
+  .upload-wrapper {
+    max-width: 400px;
+  }
 }
-
-@-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;} 
-  to {bottom: 0; opacity: 0;}
-}
-
-@keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
-}
-
-
