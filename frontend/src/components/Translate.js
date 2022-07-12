@@ -64,7 +64,7 @@ const Translate = () => {
     dlAnchorElem.click();
   };
   return (
-    <div>
+    <div className="parent-upload-wrapper">
       <div className="upload-wrapper">
         <h1>Read Text File from Client Side using JavaScript API</h1>
         <br />

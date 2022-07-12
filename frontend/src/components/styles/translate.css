@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-body {
-  margin: 2em;
+.parent-upload-wrapper {
+  /* margin: 2em; */
+  padding: 20px 0;
   text-align: center;
   font-family: 'Open Sans';
-  background: #ececec;
+  background: #e8eff6;
 }
 .upload-wrapper {
   background: #ffffff;
