@@ -1,14 +1,8 @@
-const express = require('express'); 
-const router = express.Router(); 
+const express = require("express");
+const router = express.Router();
 
-const {
-  getRecentTranslations,
-  textTranslation,
-  removeAllTranslations,
-} = require("../controllers/translate");
+const { textTranslation } = require("../controllers/translate");
 
-router.get('/', getRecentTranslations);
-router.post('/translate', textTranslation);
-router.delete('/delete', removeAllTranslations);
+router.post("/translate", textTranslation);
 
 module.exports = router;
