@@ -7,15 +7,18 @@ body {
   background: #ececec;
 }
 .upload-wrapper {
-  background: #ffffff;
+  background: #008ae6;
   margin: 30px auto;
   max-width: 650px;
   padding: 20px;
-  border: 2px solid #eeeeee;
+  border: 5px solid #1aa3ff;
+  border-style: dashed;
+  border-radius: 20px;
+  
 }
 header {
   padding: 10px 0 30px;
-  border-bottom: 2px solid #eeeeee;
+  /* border-bottom: 2px solid #eeeeee; */
 }
 #show-text {
   padding: 22px 0 5px;
@@ -35,17 +38,167 @@ a {
   font-size: 13px;
   text-decoration: none;
 }
-input[type='file'] {
-  background: #7886d8;
-  padding: 15px 11px 18px 20px;
-  border-radius: 4px;
+input[type='file']::file-selector-button
+{
+  margin-top: 20px;
+  padding: 11px 30px 10px 30px;
+  background-color: #ffff;
+  font-weight: bold;
   cursor: pointer;
-  color: white;
-  width: 159px;
-  border: 2px solid #3f51b5;
-  outline: 0;
+  border-radius: 10px;
+  border: 2px solid #ffff;
+  margin-left: 50px;
 }
+
+input[type='file']{
+  color: #ffff; 
+}
+
+.bttn{
+  margin-top: 30px;
+  margin-right: 55px;
+  border-radius:5px;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid #ffff;
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+}
+.bttn:hover{
+  background-color: #fdad0f;
+  border-color: #ffbb33;
+  color: #ffff;
+}
+
 
 .show-text {
     text-align: center;
 }
+
+.icon {
+  margin-right: 55px;
+  color: #ffff;
+}
+
+.loader{
+ margin-right: 30px ;
+
+ 
+}
+
+
+@keyframes ldio-w9i9s4valt {
+  0% { transform: rotate(0) }
+  100% { transform: rotate(360deg) }
+}
+.ldio-w9i9s4valt div { box-sizing: border-box!important }
+.ldio-w9i9s4valt > div {
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  top: 28px;
+  left: 28px;
+  border-radius: 50%;
+  border: 16px solid #000;
+  border-color: #ffff transparent #ffff transparent;
+  animation: ldio-w9i9s4valt 1s linear infinite;
+}
+.ldio-w9i9s4valt > div:nth-child(2) { border-color: transparent }
+.ldio-w9i9s4valt > div:nth-child(2) div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg);
+}
+.ldio-w9i9s4valt > div:nth-child(2) div:before, .ldio-w9i9s4valt > div:nth-child(2) div:after { 
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -16px;
+  left: 48px;
+  background: #ffff;
+  border-radius: 50%;
+  box-shadow: 0 128px 0 0 #ffff;
+}
+.ldio-w9i9s4valt > div:nth-child(2) div:after { 
+  left: -16px;
+  top: 48px;
+  box-shadow: 128px 0 0 0 #ffff;
+}
+.loadingio-spinner-dual-ring-leywlhlen9h {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: #008ae6;
+}
+.ldio-w9i9s4valt {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; 
+}
+.ldio-w9i9s4valt div { box-sizing: content-box; }
+
+
+.download {
+  color: #000;
+  border-radius:5px;
+  margin-right: 55px;
+  border: 2px solid #ffff;
+  background-color: #ffff;
+}
+
+#downloadAnchorElem{
+  margin: 10px 10px 10px 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
