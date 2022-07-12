@@ -8,14 +8,16 @@
   background: #e8eff6;
 }
 .upload-wrapper {
-  background: #008ae6;
+  background: #343a40;
   margin: 30px auto;
   max-width: 650px;
   padding: 20px;
-  border: 5px solid #1aa3ff;
-  border-style: dashed;
   border-radius: 20px;
   
+}
+
+hr {
+  background-color: #fff;
 }
 header {
   padding: 10px 0 30px;
@@ -64,13 +66,15 @@ input[type='file']{
 
 .bttn{
   margin-top: 30px;
-  margin-right: 55px;
+  margin-right: auto;
+  margin-left: auto;
   border-radius:5px;
   padding: 5px 10px 5px 10px;
   border: 2px solid #ffff;
   background-color: #fff;
   color: black;
   font-weight: bold;
+  width: 60%;
 }
 .bttn:hover{
   background-color: #fdad0f;
