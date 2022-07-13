@@ -62,7 +62,7 @@ const Translate = () => {
       encodeURIComponent(JSON.stringify(translatedText));
     let dlAnchorElem = document.getElementById("downloadAnchorElem");
     dlAnchorElem.setAttribute("href", dataStr);
-    dlAnchorElem.setAttribute("download", "scene.json");
+    dlAnchorElem.setAttribute("download", "result.json");
     dlAnchorElem.click();
   };
 
