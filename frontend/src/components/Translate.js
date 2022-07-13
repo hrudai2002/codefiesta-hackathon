@@ -31,7 +31,7 @@ const Translate = () => {
     let file = document.querySelector("input[type=file]").files[0];
     let reader = new FileReader();
 
-    var textFile = /json.*/;
+    let textFile = /json.*/;
 
     if (file.type.match(textFile)) {
       reader.onload = function (event) {
