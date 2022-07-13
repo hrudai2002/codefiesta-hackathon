@@ -99,7 +99,7 @@ const Translate = () => {
               href="https://pastebin.com/ESALr3XL"
               target="_blank"
               rel="noreferrer"
-               style={{ color: "blue", textDecoration: "none" }}
+               style={{ color: "#fff", textDecoration: "none" }}
             >
               Know More
             </a>
