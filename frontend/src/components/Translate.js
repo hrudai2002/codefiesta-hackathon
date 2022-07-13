@@ -14,7 +14,7 @@ const Translate = () => {
   const sendRequest = async () => {
     setLoader(true);
     await axios
-      .post("http://localhost:5000/translate", {
+      .post("https://codefiesta-hackathon.herokuapp.com/translate", {
         textTranslation: text,
       })
       .then((res) => {
