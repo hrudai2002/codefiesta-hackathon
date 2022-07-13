@@ -23,7 +23,7 @@ const Translate = () => {
       .then(() => {
         setLoader(false);
         setDownload(true);
-      });
+      })
   };
 
   const uploadFile = () => {

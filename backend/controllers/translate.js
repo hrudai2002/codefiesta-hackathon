@@ -14,7 +14,7 @@ const textTranslation = async (req, res) => {
   } catch (error) {
     console.log(error);
   }
-  res.status(201).json(translatedText);
+  res.status(200).json(translatedText);
 };
 
 
