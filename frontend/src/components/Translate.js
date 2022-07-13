@@ -94,7 +94,16 @@ const Translate = () => {
             </svg>
           </div>
           <input type="file" onChange={uploadFile} id="inputFile" />
-          <br />
+          <p style={{ marginRight: "48px"}}>
+            <a
+              href="https://pastebin.com/ESALr3XL"
+              target="_blank"
+              rel="noreferrer"
+               style={{ color: "blue", textDecoration: "none" }}
+            >
+              Know More
+            </a>
+          </p>
 
           {translate && (
             <button className="bttn" onClick={translateFile}>

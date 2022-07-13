@@ -3,6 +3,7 @@ import greenDiamond from './styles/images/decorative-green-diamond.svg'
 import blueCircle from './styles/images/decorative-blue-circle.svg'
 import whiteCircle from './styles/images/decorative-white-circle.svg'
 import yellowCircle from './styles/images/decorative-yellow-circle.svg'
+import phone from './styles/images/phone.png'
 import Translate from './Translate'
 import './styles/bootstrap.css'
 import './styles/styles.css'
@@ -38,7 +39,7 @@ const Header = () => {
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <div class="text-container">
+              <div class="text-container mb-10">
                 <h1>JSON TRANSLATOR</h1>
                 <p class="p-large p-heading">
                   Our online service translates regional language JSON files to
