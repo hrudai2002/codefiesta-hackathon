@@ -8,7 +8,7 @@ const textTranslation = async (req, res) => {
       let valueTextTranslate = await translate(textToTranslate[key], {
         to: "en",
       });
-      let keyTextTranslate = await translate(key, { to: "en" });
+      let keyTextTranslate = await translate(key, { to: "en"});
       translatedText[keyTextTranslate.text] = valueTextTranslate.text;
     }
   } catch (error) {
